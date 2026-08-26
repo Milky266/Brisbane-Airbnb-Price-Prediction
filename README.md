@@ -1,8 +1,11 @@
 # Predicting Airbnb Listing Prices in Brisbane, Australia
 
 A regression project predicting nightly Airbnb prices (AUD) in Brisbane from listing characteristics — built as a Kaggle-style prediction competition for a university Business Analytics course.
+<<<<<<< HEAD
 
 **My role:** Group project (team of 5). Individual contribution: **Task 3 – Model Fitting, Tuning & Prediction** — selecting candidate models, designing the CV strategy, tuning ElasticNet, Random Forest, Gradient Boosting, HistGradientBoosting and Extra Trees, building a voting ensemble, and producing the final submission with error analysis. Tasks 1–2 (EDA, feature engineering) were team-built and kept for context.
+=======
+>>>>>>> afcb9d487c386f9bc03679caa18aca935a604c61
 
 ## Summary
 
@@ -12,9 +15,12 @@ A regression project predicting nightly Airbnb prices (AUD) in Brisbane from lis
 | **Data** | 3,735 training listings / 1,601 test listings |
 | **Approach** | Engineered 64 raw fields → 27 features; compared a regularised linear baseline vs. 4 tree-based ensembles under shared 10-fold CV, scored on MAPE |
 | **Result** | Tuned **Random Forest** won — 5.82% CV MAPE, ~6.9% on final Kaggle leaderboard |
+<<<<<<< HEAD
 
 ![Price distribution](DataDistribution.png)
 *Raw vs. log-transformed price distribution and skewness diagnostics*
+=======
+>>>>>>> afcb9d487c386f9bc03679caa18aca935a604c61
 
 ## Tools
 `Python` · `pandas` / `NumPy` · `scikit-learn` (ElasticNet, RandomForest, GradientBoosting, HistGradientBoosting, ExtraTrees, VotingRegressor, GridSearchCV) · `matplotlib` / `seaborn` / `Plotly` · `KMeans`
@@ -25,6 +31,7 @@ A regression project predicting nightly Airbnb prices (AUD) in Brisbane from lis
 - **Bottleneck was data, not modelling**: `implied_price` and `room_type` drove ~74% of Random Forest decisions; every model tested (including XGBoost, LightGBM, CatBoost) converged to a ~6–7% error band, pointing to a feature ceiling rather than an algorithm problem.
 - **Business takeaway**: accurate enough to support data-driven pricing — benchmarking listings and flagging under/over-priced ones.
 
+<<<<<<< HEAD
 ![Model comparison](ModelComparision.png)
 *CV MAPE across all five models plus the voting ensemble*
 
@@ -41,3 +48,12 @@ Correlation heatmap & amenity price-lift chart · hyperparameter tuning curves �
 Time-based features (seasonality, lead time), non-price-derived signals (review sentiment, description themes), and a "noise floor" estimate from near-identical listings.
 
 📓 Notebook: `Airbnb_PricePrediction_Portfolio.ipynb`
+=======
+## Visuals
+Price distribution & skewness diagnostics · interactive price/density map · correlation heatmap & amenity price-lift chart · tuning curves · feature-importance & residual plots · final model-comparison chart
+
+## Future Work
+Time-based features (seasonality, lead time), non-price-derived signals (review sentiment, description themes), and a "noise floor" estimate from near-identical listings.
+
+Notebook: `Airbnb_PricePrediction_Portfolio.ipynb`
+>>>>>>> afcb9d487c386f9bc03679caa18aca935a604c61
