@@ -12,7 +12,7 @@ A regression project predicting nightly Airbnb prices (AUD) in Brisbane from lis
 | **Result** | Tuned **Random Forest** won — 5.82% CV MAPE, ~6.9% on final Kaggle leaderboard |
 
 ![Price distribution](DataDistribution.png)
-*Raw vs. log-transformed price distribution and skewness diagnostics*
+<br> *Raw vs. log-transformed price distribution and skewness diagnostics*
 
 ## Tools
 `Python` · `pandas` / `NumPy` · `scikit-learn` (ElasticNet, RandomForest, GradientBoosting, HistGradientBoosting, ExtraTrees, VotingRegressor, GridSearchCV) · `matplotlib` / `seaborn` / `Plotly` · `KMeans`
@@ -24,16 +24,20 @@ A regression project predicting nightly Airbnb prices (AUD) in Brisbane from lis
 - **Business takeaway**: accurate enough to support data-driven pricing — benchmarking listings and flagging under/over-priced ones.
 
 ![Model comparison](ModelComparision.png)
-*CV MAPE across all five models plus the voting ensemble*
+<br> *CV MAPE across all five models plus the voting ensemble*
 
 ![Price clustering](PriceCultering.png)
-*Interactive map of listing density and price tiers across Brisbane*
+<br> *Interactive map of listing density and price tiers across Brisbane*
 
 ![Residual distribution](ResidualDistribution.png)
-*Residual diagnostics for the final Random Forest model*
+<br> *Residual diagnostics for the final Random Forest model*
 
 ## Visuals
-Correlation heatmap & amenity price-lift chart · hyperparameter tuning curves · feature-importance plot
+"Heatmap.png"
+<br> Correlation heatmap & amenity price-lift chart
+
+"Topfeatures.png"
+<br> Feature-importance plot
 
 ## Future Work
 Time-based features (seasonality, lead time), non-price-derived signals (review sentiment, description themes), and a "noise floor" estimate from near-identical listings.
