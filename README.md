@@ -33,10 +33,10 @@ A regression project predicting nightly Airbnb prices (AUD) in Brisbane from lis
 <br> *Residual diagnostics for the final Random Forest model*
 
 ## Visuals
-"Heatmap.png"
+![Heatmap](Heatmap.png)
 <br> Correlation heatmap & amenity price-lift chart
 
-"Topfeatures.png"
+![TopFeature](Topfeatures.png)
 <br> Feature-importance plot
 
 ## Future Work
